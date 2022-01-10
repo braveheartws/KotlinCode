@@ -1,5 +1,7 @@
 package com.havefun.kotlincode
 
-object MyLiveData {
+import androidx.lifecycle.MutableLiveData
 
+object MyLiveData {
+    val info: MutableLiveData<String> by lazy { MutableLiveData() }
 }
